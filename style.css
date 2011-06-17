@@ -63,11 +63,43 @@ a {
   color:#333;
   }
 
-
-body #space-tools .block-title { background-color:#fff; }
+body #space-tools .block-title { background-color:#2f773b; }
 
 body #header .block-widget .block-content,
 body #header .block .block-title { background-color:#777; }
+
+#header {
+  float: right;
+}
+
+#header .block-toggle .block-content {
+  left: auto;
+  right: 0px;
+  -moz-border-radius: 5px 5px 5px 0px;
+  -webkit-border-radius: 5px 5px 5px 0px;
+}
+body #header .block-widget .block-content, 
+body #header .block .block-title {
+}
+body #header .block .block-title {
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  background: #666 url(images/sprite_bleeds.png) 0px -400px repeat-x;
+  text-shadow: #444 0px 1px 0px;
+  border: 1px solid #555;
+  border-color: #555 #555 #333;
+  margin-left: 5px;
+  padding: 0px 9px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+body #header .block .block-title.toggle-active {
+  background: none;  
+  border-color: #fff;
+  text-shadow: transparent 0px 0px 0px;
+}
+
 
 body .page-region .block .block-title {
   background-color:#fff;
@@ -333,7 +365,15 @@ body.logged-in #block-atrium-account .block-title {
 
   #space-tools .toggle-active {
     background-color:#fff !important;
-    color:#333;
+    color:#333 !important;
+    background-image: none !important;
+    text-shadow: transparent 0px 0px 0px !important;
+    border-color: #fff !important;
+    -moz-border-radius-bottomleft:0px !important;
+    -moz-border-radius-bottomright:0px !important;
+    -webkit-border-bottom-left-radius:0px !important;
+    -webkit-border-bottom-right-radius:0px !important;
+
     }
 
 /**
@@ -588,6 +628,7 @@ body.page-access-denied .access-denied { background-image:url(images/403.png); }
   }
 
   .buttons a,
+  body #space-tools .block-title,
   #page-tools .context-links a {
     font-size:11px;
     font-weight:bold;
@@ -701,3 +742,151 @@ body.page-access-denied .access-denied { background-image:url(images/403.png); }
     color:#fff;
     background:#999 url(images/sprite_bleeds.png) 0px -360px repeat-x;
     }
+
+    
+/**
+ * Positioning --------------------------------------------------------
+ */
+.left   { float: left; }
+.right  { float: right; }
+.size-100 { width: 99.99% }
+.size-95 { width: 94.99% }
+.size-90 { width: 89.99% }
+.size-85 { width: 84.99% }
+.size-80 { width: 79.99% }
+.size-75 { width: 74.99% }
+.size-70 { width: 69.99% }
+.size-65 { width: 64.99% }
+.size-60 { width: 59.99% }
+.size-55 { width: 54.99% }
+.size-50 { width: 49.99% }
+.size-45 { width: 44.99% }
+.size-40 { width: 39.99% }
+.size-35 { width: 34.99% }
+.size-30 { width: 29.99% }
+.size-25 { width: 24.99% }
+.size-20 { width: 19.99% }
+.size-15 { width: 14.99% }
+.size-10 { width: 9.99% }
+.size-5 { width: 4.99% }
+.inner,
+.position .inner { padding: 5px; }
+.position .inner-left { padding-right: 5px; }
+.position .inner-right { padding-left: 5px; }
+
+
+/**
+ * Global =============================================================
+ */
+ #global {
+  background: white url(images/bleeds.png) 0px -350px repeat-x;
+ }
+ 
+/**
+ * Branding ===========================================================
+ */
+#branding .block-toggle .block-content {
+  left: auto;
+  right: 0px;
+  -moz-border-radius: 5px 5px 5px 0px;
+  -webkit-border-radius: 5px 5px 5px 0px;
+}
+#branding .block-widget .block-content, 
+#branding .block .block-title {
+}
+#branding .block-content {
+  font-size: 12px;
+}
+#branding .block .block-title {
+  font-size: 11px;
+  color:#fff;
+  font-weight:normal;
+  text-transform: uppercase;
+  background: transparent;
+  text-shadow: transparent 0px 0px 0px;
+  border: 0;
+  border-left: 1px solid #555;
+  padding: 5px 10px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+#branding .block .block-title.toggle-active {
+  background: #fff;  
+  text-shadow: transparent 0px 0px 0px;
+  color: #333;
+  
+}
+#branding .branding-right .block {
+  float: right;
+  padding-left: 0px;
+}
+#branding .branding-center {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+#branding {
+  background:url(images/bleeds.png) 0px -30px repeat-x;
+  color:#ccc;
+  font-size:11px;
+  height:30px;
+  }
+
+#branding .breadcrumb {
+  padding:0px;
+  float:left;
+  text-transform:uppercase;
+  font-weight:normal;
+  overflow: hidden;
+  height: 30px;
+  }
+
+  #branding .breadcrumb-link {
+    float:left;
+    position:relative;
+    }
+
+  #branding .breadcrumb-depth-0 { z-index:10; }
+  #branding .breadcrumb-depth-1 { z-index:9; }
+  #branding .breadcrumb-depth-2 { z-index:8; }
+  #branding .breadcrumb-depth-3 { z-index:7; }
+  #branding .breadcrumb-depth-4 { z-index:6; }
+  #branding .breadcrumb-depth-5 { z-index:5; }
+  #branding .breadcrumb-depth-6 { z-index:4; }
+  #branding .breadcrumb-depth-7 { z-index:3; }
+  #branding .breadcrumb-depth-8 { z-index:2; }
+
+  #branding .breadcrumb a,
+  #branding .breadcrumb strong {
+    color:#fff;
+    font-weight:normal;
+    float:left;
+    margin-right:-10px;
+    padding:5px 20px;
+    background:url(images/bleeds.png) 100% -60px no-repeat;
+    }
+
+    #branding .breadcrumb-depth-0 a,
+    #branding .breadcrumb-depth-0 strong { padding-left:10px; }
+
+  #branding .breadcrumb a:hover { background-position:100% -90px; }
+
+  
+  
+.dropdown-blocks .block-toggle li a:hover, 
+.dropdown-blocks .block-toggle li a:focus, 
+.dropdown-blocks .block-toggle ul.links li a:hover, 
+.dropdown-blocks .block-toggle ul.links li a:focus, 
+.dropdown-blocks .block-toggle div.item-list li a:hover, 
+.dropdown-blocks .block-toggle div.item-list li a:focus, 
+.pager li.pager-current, .more-link a:hover {
+  color: white;
+  background-color: #777;
+  background-image: url(images/sprite_bleeds.png);
+  background-position: 0px -400px;
+  background-repeat: repeat-x;
+}  
+
