@@ -797,6 +797,10 @@ body.page-access-denied .access-denied { background-image:url(images/403.png); }
 #branding .block-content {
   font-size: 12px;
 }
+#branding #block-atrium-account .block-content a {
+  color: #fff;
+}
+#branding #block-atrium-account .block-content,
 #branding .block .block-title {
   font-size: 11px;
   color:#fff;

@@ -11,8 +11,8 @@
 
   <?php print $skipnav ?>
   <div id='branding' class='dropdown-blocks toggle-blocks clear-block'><div class='clear-block'>
-      <div class="breadcrumb branding-left position left size-40">
-        <?php print $breadcrumb ?>
+      <div class="branding-left position left size-40">
+        <div class='breadcrumb'><?php print $breadcrumb ?></div>
       </div>
       <div class="branding-center position left size-20">
         <?php if ($group_name) print $group_name ?>

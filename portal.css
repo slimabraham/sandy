@@ -77,11 +77,6 @@ body.atrium-portal #features-menu li.last a {
   border-right: 0;
 }
 
-body.atrium-portal .breadcrumb {
-  display: none;
-}
-
-
 body.atrium-portal .litecal.litecal-compact {
   width: 100%;
 }
