@@ -1,0 +1,17 @@
+name = "Sandy"
+description = "Sandy base theme for Open Atrium customizations."
+core = "6.x"
+atrium = "1.x"
+engine = "phptemplate"
+base theme = "ginkgo"
+
+stylesheets[screen][] = "style.css"
+stylesheets[screen][] = "portal.css"
+
+regions[left] = "Left sidebar"
+regions[right] = "Right sidebar"
+regions[content] = "Content"
+regions[header] = "Header"
+regions[space_tools] = "Space tools"
+regions[page_tools] = "Page tools"
+regions[palette] = "Palette"

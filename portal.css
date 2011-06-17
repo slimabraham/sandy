@@ -1,0 +1,101 @@
+
+body.atrium-portal #features-menu .icon {
+  display: none;
+}
+body.atrium-portal #navigation .limiter {
+  padding: 0;
+}
+body.atrium-portal #navigation {
+  background-position: 0px -58px;
+  border-top: 1px solid #BBB;  
+}
+body.atrium-portal #features-menu li.active a:hover,
+body.atrium-portal #features-menu li.active a,
+body.atrium-portal #features-menu li a:hover span.label,
+body.atrium-portal #features-menu li a span.label {
+  width: auto;
+  position: relative;
+  top: auto;
+  left: auto;
+  line-height: 14px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  overflow: visible;
+  height: 20px;
+}
+body.atrium-portal #features-menu li a {
+  width: auto;
+  height: auto;
+}
+#features-menu li.active {
+  border-right: 0;
+}
+body.atrium-portal #features-menu li.active a:hover,
+body.atrium-portal #features-menu li.active a {
+  background-position:0 -210px;
+  border-color: transparent;
+  border-width:0px;
+  border-style: none;
+  padding: 15px 20px;
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  border-right: 0;
+  height: 20px;
+}
+body.atrium-portal #features-menu li a {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  background-position:0 -110px;
+  background-repeat:no-repeat;
+  color:#999999;
+  font-size:14px;
+  font-weight:bold;
+  overflow:hidden;
+  position:relative;
+  text-shadow: none;
+  color: #333;
+  font-weight: bold;
+  padding: 15px 20px;
+  display: block;
+  border-left:1px solid #FFFFFF;
+  border-right:1px solid #CCCCCC;
+}
+
+body.atrium-portal #features-menu li {
+  padding:0px;
+}
+
+body.atrium-portal #features-menu li.first a {
+  border-left: 0;
+}
+body.atrium-portal #features-menu li.last a {
+  border-right: 0;
+}
+
+body.atrium-portal .breadcrumb {
+  display: none;
+}
+
+
+body.atrium-portal .litecal.litecal-compact {
+  width: 100%;
+}
+body.atrium-portal .block .view.view-calendar-upcoming .grouped-meta {
+  background: transparent;
+  float: none;
+  border-bottom: 0;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+body.atrium-portal .block .view.view-calendar-upcoming .views-field {
+}
+
+.front.not-logged-in #page-tools {
+  display: none;
+}
