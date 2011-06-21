@@ -21,11 +21,11 @@ function sandy_theme() {
  */
 function sandy_preprocess_page(&$vars) {
   $space = spaces_get_space();
-  if ($space && $space->type == 'og') {
-    $vars['group_name'] = $space->group->title;
-  }
-  else {
+  if (!$space) {
     unset($vars['space_tools']);
+  }
+  elseif ($space && $space->type == 'og') {
+    $vars['group_name'] = $space->group->title;
   }
   $vars['page_header'] = theme('page_header', $vars);
   $vars['page_footer'] = theme('page_footer', $vars);  
