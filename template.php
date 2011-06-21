@@ -24,8 +24,11 @@ function sandy_preprocess_page(&$vars) {
   if ($space && $space->type == 'og') {
     $vars['group_name'] = $space->group->title;
   }
+  else {
+    unset($vars['space_tools']);
+  }
   $vars['page_header'] = theme('page_header', $vars);
-  $vars['page_footer'] = theme('page_footer', $vars);
+  $vars['page_footer'] = theme('page_footer', $vars);  
 }
 
 /**

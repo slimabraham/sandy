@@ -339,12 +339,15 @@ body.logged-in #block-atrium-account .block-title {
   background-position:0px -40px;
   background-repeat:repeat-x;
   position:relative;
-  z-index:2;
+  background-image: none; 
+  z-index:5;
   }
 
   #navigation .limiter {
     padding-top:20px;
     height:50px;
+    margin-top: -20px;
+    
     }
 
 #space-tools {
@@ -406,7 +409,7 @@ body.logged-in #block-atrium-account .block-title {
   }
 
 #features-menu li a {
-  color:#fff;
+  color:#333;
   position:relative;
   line-height:40px;
   width:40px;

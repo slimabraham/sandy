@@ -21,7 +21,9 @@
         <?php if ($header): ?>
           <?php print $header ?>        
         <?php endif; ?>
-        <?php print $space_tools ?>
+        <?php if ($space_tools): ?>
+          <?php print $space_tools ?>
+        <?php endif; ?>
       </div>
   </div></div>
 
