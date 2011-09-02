@@ -1,4 +1,4 @@
-<?php extract($vars, EXTR_SKIP);  // Extract the variables to a local namespace ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
   <head>
     <?php print $head ?>
@@ -21,9 +21,7 @@
         <?php if ($header): ?>
           <?php print $header ?>        
         <?php endif; ?>
-        <?php if ($space_tools): ?>
-          <?php print $space_tools ?>
-        <?php endif; ?>
+        <?php print $space_tools ?>
       </div>
   </div></div>
 

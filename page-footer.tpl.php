@@ -1,5 +1,4 @@
   </div></div>
-  <?php extract($vars, EXTR_SKIP);  // Extract the variables to a local namespace ?>
   <?php if ($footer_message || $footer_links): ?>
   <div id="footer"><div class='limiter clear-block'>
     <?php if ($footer_message): ?><div class='footer-message'><?php print $footer_message ?></div><?php endif; ?>

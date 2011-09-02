@@ -1,4 +1,4 @@
-<?php print $page_header; ?>
+<?php include sandy_get_header_path(); ?>
 
 <div id='content'><div class='page-region clear-block'>
   <?php if ($content): ?>
@@ -7,4 +7,4 @@
   <?php print $content_region ?>
 </div></div>
 
-<?php print $page_footer; ?>
+<?php include sandy_get_footer_path(); ?>

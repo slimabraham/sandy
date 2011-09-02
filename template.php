@@ -21,14 +21,9 @@ function sandy_theme() {
  */
 function sandy_preprocess_page(&$vars) {
   $space = spaces_get_space();
-  if (!$space) {
-    unset($vars['space_tools']);
-  }
-  elseif ($space && $space->type == 'og') {
+  if ($space && $space->type == 'og') {
     $vars['group_name'] = $space->group->title;
   }
-  $vars['page_header'] = theme('page_header', $vars);
-  $vars['page_footer'] = theme('page_footer', $vars);  
 }
 
 /**
@@ -68,4 +63,20 @@ function sandy_breadcrumb($breadcrumb, $prepend = TRUE) {
   return $output;
 }
 
+/**
+ * Helper for header inclusion.
+ */
+function sandy_get_header_path() {
+  $registry = theme_get_registry();
+  $t = $registry['page_header'];
+  return getcwd() . DIRECTORY_SEPARATOR . $registry['page_header']['theme path'] . DIRECTORY_SEPARATOR . 'page-header.tpl.php';  
+}
 
+/**
+ * Helper for footer inclusion.
+ */
+function sandy_get_footer_path() {
+  $registry = theme_get_registry();
+  $t = $registry['page_footer'];
+  return getcwd() . DIRECTORY_SEPARATOR . $registry['page_footer']['theme path'] . DIRECTORY_SEPARATOR . 'page-footer.tpl.php';  
+}

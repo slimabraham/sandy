@@ -1,4 +1,4 @@
-<?php print $page_header; ?>
+<?php include sandy_get_header_path(); ?>
 
 <div id='content'><div class='page-region'>
   <?php if ($content): ?>
@@ -10,4 +10,4 @@
   <?php if ($right) print $right ?>
 </div></div>
 
-<?php print $page_footer; ?>
+<?php include sandy_get_footer_path(); ?>
